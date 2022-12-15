@@ -15,7 +15,9 @@ def somos(request):
 def blog(request):
     return render(request, 'fundacionapp/blog.html'); 
 
+
+
+
+
  
 
-def contacto(request):
-    return render(request, 'fundacionapp/contacto.html');
