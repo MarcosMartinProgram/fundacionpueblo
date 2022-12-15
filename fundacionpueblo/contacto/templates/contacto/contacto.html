@@ -1,0 +1,38 @@
+{% extends "fundacionapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="contenedorFormulario">
+
+    {% if "valido" in request.GET %}
+
+    <p style="color:black"> CORRECTO ¡GRACIAS!</p>
+
+    {% endif %}
+    <form action="" method="POST" style="text-align:center;">
+        {% csrf_token %}
+        <table style="color:black"> {{miformulario.as_table}}</table>
+        <input type="submit" value="Enviar" style="width:150px;">
+    </form>
+
+</div>
+<section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">OTRAS FORMAS DE CONTACTO</span>
+              <span class="section-heading-upper">Teléfono: 3624308942</span>
+            </h2>
+            <p class="mb-0">Correo electrónico: fundacionpueblochaco@gmail.com <br> 
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
