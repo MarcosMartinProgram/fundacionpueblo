@@ -1,0 +1,34 @@
+{% extends "fundacionapp/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+   <!-- Heading -->
+<form method="post" action="" style="color: white;">
+
+   {% csrf_token %}
+
+      <div style="width: 25%; margin: auto">
+         
+         <!-- mensaje de error -->
+         {% if messages %}
+            {% for mensaje in messages %}
+
+               <span style="color: brown;"> {{mensaje}} </span> 
+
+            {% endfor %}
+         {% endif %}
+   
+         {{form|crispy}}
+         <!-- end mendaje de error -->
+
+
+         <button type="submit" class="btn btn-success">Login</button>
+      
+      </div>
+
+</form>
+   
+{% endblock %}
