@@ -133,3 +133,13 @@ MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# CONFIGURACION PARA RECIBIR EL FORMULARIO DE CONTACTO EN EL EMAIL A COMPLETAR CON LOS DATOS DE LA FUNDACION
+"""
+EMAIL_BACKEND="django.core.mail.backend.smt.EmailBackend"
+EMAIL_HOST=
+EMAIL_USE_TLS=True
+EMAIL_PORT=
+EMAIL_HOST_USER=
+EMAIL_HOST_PASWORD=
+"""
