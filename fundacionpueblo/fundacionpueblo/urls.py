@@ -21,5 +21,6 @@ urlpatterns = [
     path('eventos/', include('Eventos.urls')),
     path('', include('fundacionapp.urls')),
     path('contacto/', include('contacto.urls')),
+    path('login/', include('login.urls')),
     path('blog/', include('blog.urls')),    
 ]
