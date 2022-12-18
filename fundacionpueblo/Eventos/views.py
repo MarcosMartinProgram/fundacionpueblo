@@ -7,4 +7,4 @@ from Eventos.models import Eventos
 def eventos(request):
     eventos=Eventos.objects.all()
 
-    return render(request, 'Eventos/eventos.html', {'eventos': eventos});
+    return render(request, 'Eventos/eventos.html', {'eventos': eventos})
